@@ -21,6 +21,10 @@ l = [
 	('Burton' , '1939')
 	]
 
-l.sort(key=lambda element: element[1], reverse=True)
-for element in l:
-	print(element[1] + " : " + element[0])
+def printSortedList():
+	l.sort(key=lambda element: element[1], reverse=True)
+	for element in l:
+		print(element[1] + " : " + element[0])
+
+if __name__ == '__main__':
+	printSortedList()

@@ -11,10 +11,15 @@ capital_cities = {
 				"NJ": "Trenton",
 				"CO": "Denver"
 				}
-if len(sys.argv) == 2:
+
+def printCapital(state):
 	capital = capital_cities.get(states.get(sys.argv[1]))
 	if capital != None:
 		print(capital)
 	else:
 		print("Unknown state")
 
+
+if __name__ == '__main__':
+	if len(sys.argv) == 2:
+		printCapital(sys.argv[1])
